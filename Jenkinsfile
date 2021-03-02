@@ -21,7 +21,6 @@ pipeline {
 
 	      }
    	  }
-	git remote
 	  stage ('Integration Test'){
 	      steps {
     			sh  'mvn clean verify -Dsurefire.skip=true';
